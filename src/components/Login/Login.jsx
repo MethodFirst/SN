@@ -5,7 +5,7 @@ import {Input} from "../common/FormsControls/FormsControls";
 import {maxLengthCreator, required} from "../../utils/validators/validators";
 
 
-const maxLength10 = maxLengthCreator(30);
+const maxLength10 = maxLengthCreator(40);
 
 const LoginForm = (props) => {
     console.log("RERENDER")
