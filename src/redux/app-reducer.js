@@ -1,6 +1,7 @@
 import {authAPI} from "../api/api";
 import {stopSubmit} from "redux-form";
 import {getAuthUserData} from "./auth-reducer";
+import {withAuthRedirect} from "../hoc/withAuthRedirect";
 
 const INITIALIZED_SUCCESS = 'SET_USER_DATA';
 
