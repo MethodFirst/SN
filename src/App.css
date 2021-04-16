@@ -1,3 +1,4 @@
+
 .app-wrapper {
     margin: 0 auto;
     display: grid;
@@ -14,21 +15,12 @@
     background-color: cornflowerblue;
 }
 
+.app-wrapper-content2 {
+    grid-area: c;
+    background-color: cornflowerblue;
+    height: 878px;
+}
 
 
 
 
-
-
-
-
-
-/*
-
-/messages
-/dialogs
-
-/dialogs/3
-/dialogs/2
-
-*/

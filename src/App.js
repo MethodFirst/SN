@@ -13,6 +13,7 @@ import store from "./redux/redux-store";
 import {withSuspense} from "./hoc/withSuspense";
 import {withAuthRedirect} from "./hoc/withAuthRedirect";
 import s from "./components/Header/Header.module.css";
+import st from "./MainPage.module.css"
 
 const DialogsContainer = React.lazy(() => import('./components/Dialogs/DialogsContainer'));
 const ProfileContainer = React.lazy(() => import('./components/Profile/ProfileContainer'));
@@ -30,8 +31,12 @@ class App extends Component {
 
         return (
             <div className='app-wrapper'>
+                <div className='app-wrapper-content2'>
+                    <div>WELCOME</div>
+                </div>
                 <HeaderContainer/>
                 <Navbar/>
+
                 <div className='app-wrapper-content'>
                     <Route path='/dialogs'
                            render={withSuspense(DialogsContainer)}/>

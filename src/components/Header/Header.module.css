@@ -1,6 +1,6 @@
 .header {
     grid-area: h;
-    background-color: green;
+    background-color: gray;
 }
 
 .header img {
@@ -18,5 +18,28 @@
 .login {
     margin-right: 600px;
 }
+
+.LoginButton {
+    background-color:#c62d1f;
+    border-radius: 0px;
+    border:1px solid #d02718;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    margin-top: 5px;
+    font-family:Arial;
+    font-size:16px;
+    padding:12px 23px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #810e05;
+}
+.LoginButton:hover {
+    background-color:#f24437;
+}
+.LoginButton:active {
+    position:relative;
+    top:1px;
+}
+
 
 
