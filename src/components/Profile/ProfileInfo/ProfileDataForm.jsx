@@ -30,7 +30,7 @@ const ProfileDataForm = ({handleSubmit, profile, error}) => {
             return <div key={key} className={s.contact}>
             <b>{key}: {createField(key, "contacts." + key, [], Input)} </b>
             </div>
-        })}}
+        })}
         </div>
     </form>
 }

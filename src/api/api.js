@@ -1,4 +1,7 @@
 import * as axios from "axios";
+import {withAuthRedirect} from "../hoc/withAuthRedirect";
+import {Redirect} from "react-router-dom";
+import React from "react";
 
 
 const instance = axios.create({

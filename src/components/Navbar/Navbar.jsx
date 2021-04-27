@@ -17,13 +17,13 @@ const Navbar = () => {
             </div>
 
             <div className={s.item}>
-                <a>News</a>
+                <a>News in developing</a>
             </div>
             <div className={s.item}>
-                <a>Music</a>
+                <a>Music in developing</a>
             </div>
             <div className={s.item}>
-                <a>Settings</a>
+                <a>Settings in developing</a>
             </div>
         </nav>
     )
