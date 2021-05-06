@@ -1,7 +1,8 @@
-import profileReducer, {addPostActionCreator, deletePost} from "./profile-reducer";
+ import profileReducer, {actions} from "./profile-reducer";
 import ReactDOM from "react-dom";
 import App from "../App";
 import React from 'react';
+ import {ProfileType} from "../types/types";
 
 let state = {
     posts: [
@@ -9,12 +10,15 @@ let state = {
         {id: 2, message: 'It\'s my first post', likesCount: 11},
         {id: 3, message: 'Blabla', likesCount: 11},
         {id: 4, message: 'Dada', likesCount: 11}
-    ]
+    ],
+    profile: null,
+    status: "",
+    newPostText: ""
 };
 
 it('length of posts should be incremented', () => {
     //1. Test data
-    let action = addPostActionCreator("MethodFirst.com");
+    let action = actions.addPostActionCreator("MethodFirst.com");
 
     //2. action
     let newState = profileReducer(state,action);
@@ -25,7 +29,7 @@ it('length of posts should be incremented', () => {
 
 it('message of post should be correct', () => {
     //1. Test data
-    let action = addPostActionCreator("MethodFirst.com");
+    let action = actions.addPostActionCreator("MethodFirst.com");
 
     //2. actions
     let newState = profileReducer(state,action);
@@ -35,7 +39,7 @@ it('message of post should be correct', () => {
 
 it('after deleting length should be decremented', () => {
     //1. Test data
-    let action = deletePost(1);
+    let action = actions.deletePost(1);
     //2. actions
     let newState = profileReducer(state,action);
     //3. expectations
@@ -44,7 +48,7 @@ it('after deleting length should be decremented', () => {
 
 it('after deleting length should not be decremented', () => {
     //1. Test data
-    let action = deletePost(10000000);
+    let action = actions.deletePost(10000000);
     //2. actions
     let newState = profileReducer(state,action);
     //3. expectations
