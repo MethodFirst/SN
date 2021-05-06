@@ -5,14 +5,6 @@ import {securityAPI} from "../api/Security-api";
 import {ActionsTypesInfer, BaseThunkType} from "./redux-store";
 
 
-export type InitialStateType2 = {
-    userId: number | null,
-    email: string | null,
-    login: string | null,
-    isAuth: boolean,
-    captchaUrl: string | null,
-}
-
 let initialState = {
     userId: null as number | null,
     email: null as string | null,
